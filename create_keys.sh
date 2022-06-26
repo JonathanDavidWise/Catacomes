@@ -1,1 +1,1 @@
-gpg --full
+# gpg --full
