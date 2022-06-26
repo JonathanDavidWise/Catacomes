@@ -1,4 +1,8 @@
 FROM alpine
 COPY . /app
 WORKDIR /app
-CMD sh install.sh
+RUN apk update && \
+    apk upgrade && \
+    apk add gnupg
+ENTRYPOINT ["tail"]
+CMD ["-f","/dev/null"]
