@@ -1,3 +1,3 @@
-apt update
-apt upgrade
-apt install gnupg
+apk update
+apk upgrade
+apk add gnupg
