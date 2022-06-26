@@ -1,2 +1,3 @@
 docker build -t catacomes .
-docker run -it catacomes /bin/sh
+docker create catacomes > contID.txt
+docker start $(cat contID.txt)
