@@ -1,5 +1,5 @@
 FROM alpine
-COPY . /app
+COPY /app /app
 WORKDIR /app
 RUN apk update && \
     apk upgrade && \
