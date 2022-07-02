@@ -1,8 +1,8 @@
 FROM alpine
-COPY /app /app
-WORKDIR /app
-RUN apk update && \
-    apk upgrade && \
-    apk add gnupg
+COPY /crypt /crypt
+WORKDIR /crypt
+#RUN apk update && \
+#    apk upgrade && \
+#    apk add gnupg
 ENTRYPOINT ["tail"]
 CMD ["-f","/dev/null"]
