@@ -1,6 +1,6 @@
 FROM alpine
-COPY /app /app
-WORKDIR /app
+COPY /crypt /crypt
+WORKDIR /crypt
 RUN apk update && \
     apk upgrade && \
     apk add gnupg
