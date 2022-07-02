@@ -1,12 +1,20 @@
-
+----------------------------------------------------------
 You are entering the CRYPT, and here are the instructions.
 Type in the following command to start shenanigans:
 
 sh run.sh
 
-When exiting any script with CTRL+C, run
+To exit at any point, hold down CTRL and press C.
+When exiting any script with CTRL+C, type
 
 sh run.sh
 
-to get started again. Good luck, and responsibly enjoy your privacy.
+to get started again, or type
+
+exit
+
+to exit the crypt.
+
+Good luck, and responsibly enjoy your privacy.
+----------------------------------------------------------
 

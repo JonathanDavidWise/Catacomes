@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cat README.txt
 echo Make a selection:
 echo 1 - Key Management
 echo 2 - Encrypt
