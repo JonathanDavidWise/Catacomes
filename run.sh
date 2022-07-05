@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Remove after Prototyping
-docker cp ./crypt/run.sh $(cat contID.txt):/crypt/run.sh
-docker cp ./crypt/generate_key.sh $(cat contID.txt):/crypt/generate_key.sh
-docker cp ./crypt/encrypt_message.sh $(cat contID.txt):/crypt/encrypt_message.sh
-docker cp ./crypt/decrypt_message.sh $(cat contID.txt):/crypt/decrypt_message.sh
+docker cp ./crypt/enter.sh $(cat contID.txt):/crypt/enter.sh
+docker cp ./crypt/keys.sh $(cat contID.txt):/crypt/keys.sh
+docker cp ./crypt/encrypt.sh $(cat contID.txt):/crypt/enctypt.sh
+docker cp ./crypt/decrypt.sh $(cat contID.txt):/crypt/decrypt.sh
 docker cp ./crypt/README.txt $(cat contID.txt):/crypt/README.txt
 # ------------------------------------------
 docker start $(cat contID.txt)
