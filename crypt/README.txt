@@ -7,7 +7,7 @@ sh run.sh
 To exit at any point, hold down CTRL and press C.
 When exiting any script with CTRL+C, type
 
-sh run.sh
+sh enter.sh
 
 to get started again, or type
 
