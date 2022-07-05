@@ -11,11 +11,11 @@ echo 7 - Main Menu
 read choice_key_management
 
 if [ $choice_key_management = 1 ]
-then sh gpg --list-key
-if [ $choice_key_management = 1 ]
-then sh sh gpg --list-secret-keys
+then gpg --list-key
+if [ $choice_key_management = 2 ]
+then gpg --list-secret-keys
 elif [ $choice_key_management = 3 ]
-then sh generate_key.sh
+then gpg --full-generate-key
 elif [ $choice_key_management = 4 ]
 then sh delete_key.sh
 elif [ $choice_key_management = 5 ]
