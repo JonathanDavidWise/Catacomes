@@ -1,4 +1,6 @@
 #!/bin/bash
+choice_main_menu=0
+
 cat README.txt
 echo Make a selection:
 echo 1 - Key Management
