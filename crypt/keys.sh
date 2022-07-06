@@ -11,8 +11,9 @@ echo 7 - Main Menu
 read choice_key_management
 
 if [ $choice_key_management = 1 ]
-then gpg --list-key
-if [ $choice_key_management = 2 ]
+then 
+    gpg --list-keys
+elif [ $choice_key_management = 2 ]
 then gpg --list-secret-keys
 elif [ $choice_key_management = 3 ]
 then gpg --full-generate-key
@@ -23,10 +24,7 @@ then sh export_key.sh
 elif [ $choice_key_management = 6 ]
 then sh import_key.sh
 elif [ $choice_key_management = 7 ]
-then sh run.sh
-then exit
+then sh enter.sh
 fi
 
-
-
-gpg --full-generate-key
+sh enter.sh

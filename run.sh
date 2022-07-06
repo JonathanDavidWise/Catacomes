@@ -6,6 +6,7 @@ docker cp ./crypt/keys.sh $(cat contID.txt):/crypt/keys.sh
 docker cp ./crypt/encrypt.sh $(cat contID.txt):/crypt/enctypt.sh
 docker cp ./crypt/decrypt.sh $(cat contID.txt):/crypt/decrypt.sh
 docker cp ./crypt/README.txt $(cat contID.txt):/crypt/README.txt
+docker cp ./crypt/test.txt $(cat contID.txt):/crypt/test.txt
 # ------------------------------------------
 docker start $(cat contID.txt)
 docker exec $(cat contID.txt) cat README.txt
